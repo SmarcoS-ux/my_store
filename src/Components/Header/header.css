@@ -1,0 +1,64 @@
+.header{
+    background-color: rgb(133, 240, 133);
+    width: calc(100% - 20px);
+    height: 70px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header .area-pesquisa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(50% - 50px);
+}
+
+.header .area-user-config{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.header #logo{
+    width: 45px;
+    height: 45px;
+}
+
+.header input{
+    height: 28px;
+    width: 400px;
+    margin-left: 50px;
+    outline: none;
+    border: 1px solid rgb(104, 101, 101);
+    border-radius: 15px 0 0 15px;
+    padding-left: 10px;
+}
+
+.header #img-button{
+    width: 20px;
+    height: 20px;
+}
+.header button{
+    width: 40px;
+    height: 32px;
+    border-radius: 0 15px 15px 0;
+    border-top: 1px solid rgb(104, 101, 101);
+    border-right: 1px solid rgb(104, 101, 101);
+    border-bottom: 1px solid rgb(104, 101, 101);
+    border-left: none;
+    background-color: rgb(206, 204, 204);
+}
+.header button:hover{
+    background-color: rgb(184, 184, 184);
+    cursor: pointer;
+}
+
+.header #img-user{
+    width: 30px;
+    height: 30px;
+}
+
