@@ -1,26 +1,30 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
 .header{
-    background-color: rgb(133, 240, 133);
-    width: calc(100% - 20px);
+    background-color: rgb(213, 248, 188);
+    width: calc(100% - 100px);
     height: 70px;
-    padding-left: 20px;
+    padding: 0px 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .header .area-pesquisa{
+    width: calc(50%);
+    margin: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: calc(50% - 50px);
+    justify-content: flex-start;
 }
-
-.header .area-user-config{
+.header .area-pesquisa .icons_1{
+    margin: 0;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
-    width: 50%;
 }
 
 .header #logo{
@@ -57,8 +61,33 @@
     cursor: pointer;
 }
 
-.header #img-user{
+.header .area-user-config{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin: 0
+}
+.header .area-user-config .icons{
+    margin: 0;
+}
+
+.header #config{
     width: 30px;
     height: 30px;
+    margin-right: 25px;
+}
+.header #config:hover{
+    cursor: pointer;
+}
+
+.header #img-user{
+    width: 28px;
+    height: 30px;
+}
+.header #img-user:hover{
+    cursor: pointer;
 }
 

@@ -1,0 +1,77 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.main{
+    width: 100%;
+}
+
+.banner_principal{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../../../public//assets/banner_principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    height: 400px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: #c9f3b6;
+    padding-bottom: 20px;
+}
+.banner_principal #subtitle, h1{
+    width: 100%;
+    font-family: 'Kaushan Script', cursive;
+}
+.banner_principal h1{
+    font-size: 90px;
+}
+.banner_principal h3{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.introducao #title-marcas{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    padding-top: 30px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #e6e6e6;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.introducao #line{
+    background-color: rgb(221, 223, 222);
+    height: 3px;
+    border: 1px solid #e6e6e6;
+    width: 246px;
+}
+
+
+.marcas{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    overflow-x: scroll;
+    width: 100%;
+}
+.marcas a{
+    text-decoration: none;
+    color: #e6e6e6;
+}
+.marcas .marca{
+    text-align: center;
+    margin: 0 10px;
+}
+.marcas .marca img{
+    width: 150px;
+    height: 100px;
+    border-radius: 50% 50% 10px 10px;
+}
