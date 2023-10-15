@@ -5,7 +5,11 @@
 
 .main{
     width: 100%;
-}
+} 
+
+
+
+
 
 .banner_principal{
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../../../public//assets/banner_principal.jpg");
@@ -22,16 +26,21 @@
     padding-bottom: 20px;
 }
 .banner_principal #subtitle, h1{
-    width: 100%;
     font-family: 'Kaushan Script', cursive;
 }
 .banner_principal h1{
+    width: 100%;
     font-size: 90px;
 }
 .banner_principal h3{
     font-size: 30px;
-    margin-left: 10px;
+    width: calc(100% - 10px);
+    padding-left: 10px;
 }
+
+
+
+
 
 .introducao #title-marcas{
     background-color: rgba(0, 0, 0, 0.9);
@@ -54,13 +63,15 @@
 }
 
 
+
+
 .marcas{
-    background-color: aquamarine;
     display: flex;
     flex-direction: row;
     margin-top: 50px;
     overflow-x: scroll;
-    width: 100%;
+    width: calc(100% - 100px) ;
+    padding: 0 50px;
 }
 .marcas a{
     text-decoration: none;
@@ -74,4 +85,68 @@
     width: 150px;
     height: 100px;
     border-radius: 50% 50% 10px 10px;
+}
+.marcas .marca p{
+    padding-bottom: 20px;
+}
+
+
+
+
+.area-main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+}
+
+
+
+
+.filtros{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(350px - 100px);
+    padding: 30px 50px;
+    margin: 0;
+}
+
+.filtros .filtro{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #919191;
+    width: 100%;
+}
+.filtros .filtro h4{
+    font-size: 18px;
+    width: 100%;
+}
+.filtros .filtro label{
+    font-size: 15px;
+    margin: 0;
+    padding-top: 5px;
+    
+}
+.filtros .filtro label input{
+    margin-right: 6px;
+}
+
+
+
+
+.frete{
+    margin: 0;
+    padding-top: 60px;
+    width: 300px;
+    text-align: center;
+}
+.frete img{
+    width: 300px;
+}
+.frete p{
+    font-size: 14px;
 }
