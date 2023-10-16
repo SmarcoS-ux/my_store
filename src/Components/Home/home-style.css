@@ -139,14 +139,89 @@
 
 
 .frete{
-    margin: 0;
+    /*margin: 0;*/
     padding-top: 60px;
     width: 300px;
     text-align: center;
 }
 .frete img{
     width: 300px;
+    box-shadow: 3px 3px 5px #a09f9f;
 }
 .frete p{
     font-size: 14px;
+    margin-top: 20px;
+}
+
+
+
+
+.produtos-diversidade{
+    /*margin: 0;*/
+    margin-left: 40px;
+    padding-top: 60px;
+    width: 300px;
+    text-align: center;
+}
+.produtos-diversidade img{
+    width: 300px;
+    box-shadow: 3px 3px 5px #a09f9f;
+}
+.produtos-diversidade p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+
+.cupom{
+    /*margin: 0;*/
+    margin-left: 40px;
+    padding-top: 60px;
+    width: 300px;
+    text-align: center;
+}
+.cupom img{
+    width: 300px;
+    height: 300px;
+    box-shadow: 3px 3px 5px #a09f9f;
+}
+.cupom p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+
+.produtos-mais-vendidos{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 40px;
+    width: calc(100%);
+}
+.produtos-mais-vendidos .produtos{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: calc(100% - 100px);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.produtos-mais-vendidos .produtos .produto{
+    margin: 40px 10px;
+    position: relative;
+}
+.produtos-mais-vendidos .produtos .produto img{
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+.produtos-mais-vendidos .produtos .produto .shadow{
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    box-shadow: inset 0px 0px 10px 0px #353434;
+    border-radius: 8px;
 }

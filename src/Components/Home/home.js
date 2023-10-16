@@ -111,6 +111,96 @@ const Home = () => {
                             <p>Frete grátis em quase todos os produtos da loja. Aproveite!</p>
                             <p>Nossos produtos são enviados no mesmo dia do pagamento.</p>
                             <p>Enviamos para todo o Brasil e algumas localidades internacionais sem taxa e custos adicionais.</p>
+                            <p>EM casos de Devoluções, não é cobrado nenhuma taxa. Tudo isso para que os nossos clientes 
+                               possam ter a melhor experiência. 
+                            </p>
+                        </div>
+                        <div className="produtos-diversidade">
+                            <img src="/assets/diversidade_produtos.jpg" alt="Diversidade de Produtos" title="Produtos"/>
+                            <p>Nossa loja é parceira de várias marcas famosas incluíndo Apple, Asus, Nvidia e muitas outras.
+                               Isso é uma vantagem e nos torna uma loja intermediadora entre o cliente e o fabricante.
+                            </p>
+                            <p>Temos os mais diversos produtos e tecnologia de ponta sendo últimos lançamentos de 
+                               Smartphones, Desktops, e periféricos em geral.
+                            </p>
+                            <p>Temos uma especialidade que é o <strong>Modo Presente</strong> onde o cliente pode optar em
+                               enviar para um presente para amigo querido. Neste modo não há custo adicional.
+                            </p>
+                        </div>
+                        <div className='cupom'>
+                            <img src="/assets/indiqueganhe.png" alt="Cupom" title="Cupom de Desconto"/>
+                            <p>Você pode ganhar um desconto exclusivo para cada amigo indicado.</p>
+                            <p>Seu amigo precisa se cadastrar na loja usando seu link de indicação. 
+                               Dessa forma Você ganhará um Cupom de Desconto e poderá utiliza-lo em qualquer
+                               produto da loja. 
+                            </p>
+                            <p>Seu amigo também ganhará desconto por se cadastrar usando seu link.</p>
+                            <p>Não perca, aproveite!</p>
+                        </div>
+                    </div>
+                    <div className='produtos-mais-vendidos'>
+                        <h4>Produtos mais vendidos:</h4>
+                        <div className='produtos'>
+                            <div className='produto'>
+                                <a href="#">
+                                    <img src="/assets/img-produtos/airpod.jpeg" alt="AirPod" title="AirPod"/>
+                                    <div className='shadow'></div>
+                                </a>
+                            </div>
+                            <div className='produto'>
+                                <a href="#">
+                                    <img src="/assets/img-produtos/iphone.jpg" alt="Iphone 15 Pro Max" title="Iphone 15 Pro Max"/>
+                                    <div className='shadow'></div>
+                                </a>
+                            </div>
+                            <div className='produto'>
+                                <a href="#">
+                                    <img src="/assets/img-produtos/monitor.jpg" alt="Monitor Gamer" title="Monitor Gamer"/>
+                                    <div className='shadow'></div>
+                                </a>
+                            </div>
+                            <div className='produto'>
+                                <a href="#">
+                                    <img src="/assets/img-produtos/placa-de-video.jpg" alt="Placa de Vídeo RTX 4060Ti" title="Placa de Vídeo"/>
+                                    <div className='shadow'></div>
+                                </a>
+                            </div>
+                            <div className='produto'>
+                                <a href="#">
+                                    <img src="/assets/img-produtos/ssd-crucial.jpg" alt="SSD Crucial 2TB" title="SSD Crucial"/>
+                                    <div className='shadow'></div>
+                                </a>
+                            </div>
+                            <div className='produto'>
+                                <a href="#">
+                                    <img src="/assets/img-produtos/tablet-gamer.jpg" alt="Tablet Gamer Samsung A7" title="Tablet Gamer"/>
+                                    <div className='shadow'></div>
+                                </a>
+                            </div>
+                            <div className='produto'>
+                                <a href="#">
+                                    <img src="/assets/img-produtos/impressora.jpg" alt="Impressora HP" title="Impressora"/>
+                                    <div className='shadow'></div>
+                                </a>
+                            </div>
+                            <div className='produto'>
+                                <a href="#">
+                                    <img src="/assets/img-produtos/notebook-dell.avif" alt="Notebook Dell" title="Notebook Dell"/>
+                                    <div className='shadow'></div>
+                                </a>
+                            </div>
+                            <div className='produto'>
+                                <a href="#">
+                                    <img src="/assets/img-produtos/carregador-celular.jpg" alt="Carregadore de Celular" title="Carregador de Celular"/>
+                                    <div className='shadow'></div>
+                                </a>
+                            </div>
+                            <div className='produto'>
+                                <a href="#">
+                                    <img src="/assets/img-produtos/mouse.jpg" alt="Mouse" title="Mouse"/>
+                                    <div className='shadow'></div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
