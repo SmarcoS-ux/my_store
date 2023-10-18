@@ -1,79 +1,139 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./home-style.css";
 
 import Header from '../Header/header';
 import Footer from '../Footer/footer';
 
 const Home = () => {
+    const Theme_light = "/assets/sol.png";
+    const Theme_dark = "/assets/lua.png";
+
+    const[light_dark_theme, setLightDarkTheme] = useState(Theme_light);
+    const[background_header, setBackgroundHeader] = useState("header_theme_dark");
+    const[theme_home_introducao, setThemeHomeIntroducao] = useState("title-marcas_dark");
+
+
+    const Mudar_tema = () => {
+        if (light_dark_theme == Theme_light){
+            setLightDarkTheme(Theme_dark);
+            setBackgroundHeader("header_theme_light");
+            setThemeHomeIntroducao("title-marcas_light");
+        } else{
+            setLightDarkTheme(Theme_light);
+            setBackgroundHeader("header_theme_dark");
+            setThemeHomeIntroducao("title-marcas_dark");
+        }
+        
+    }
+
     return(
         <main classNam="main">
-            <Header/> 
+            <Header light_dark_theme={light_dark_theme}
+                    background_header={background_header}
+                    theme_home_introducao={theme_home_introducao}
+                    setLightDarkTheme={setLightDarkTheme}
+                    setBackgroundHeader={setBackgroundHeader}
+                    setThemeHomeIntroducao={setThemeHomeIntroducao} 
+                    Theme_dark={Theme_dark}
+                    Theme_light={Theme_light}
+                    Mudar_tema={Mudar_tema}
+            /> 
             <div className='banner_principal'>
-                <h1>Greeng Store</h1>
+                <h1>Future Store</h1>
                 <h3 id="subtitle">A sua loja de Tecnologia</h3>
             </div>
             <div className='introducao'>
-                <div id="title-marcas">
+                <div id={theme_home_introducao}>
                     <h3>Principais marcas</h3>
-                    <div id="line"></div>
+                    <div id="line_dark"></div>
                     <div className='marcas'>
                         <div className='marca'>
                             <a href="#">
-                                <img src="/assets/img-marcas/nvidia.png" alt="Nvidia" title="Nvidia"/>
+                                <img src="/assets/img-marcas/nvidia.png" 
+                                     alt="Nvidia" 
+                                     title="Nvidia"
+                                />
                                 <p>Nvidia</p>
                             </a>
                         </div>
                         <div className='marca'>
                             <a href="#">
-                                <img src="/assets/img-marcas/amd.png" alt="Amd" title="Amd"/>
+                                <img src="/assets/img-marcas/amd.png" 
+                                     alt="Amd" 
+                                     title="Amd"
+                                />
                                 <p>AMD</p>
                             </a>
                         </div>
                         <div className='marca'>
                             <a href="#">
-                                <img src="/assets/img-marcas/apple.jpg" alt="Apple" title="Apple"/>
+                                <img src="/assets/img-marcas/apple.jpg" 
+                                     alt="Apple" 
+                                     title="Apple"
+                                />
                                 <p>Apple</p>
                             </a>
                         </div>
                         <div className='marca'>
                             <a href="#">
-                                <img src="/assets/img-marcas/asus.jpg" alt="Asus" title="Asus"/>
+                                <img src="/assets/img-marcas/asus.jpg" 
+                                     alt="Asus" 
+                                     title="Asus"
+                                />
                                 <p>Asus</p>
                             </a>
                         </div>
                         <div className='marca'>
                             <a href="#">
-                                <img src="/assets/img-marcas/c3tech.jpg" alt="C3Tech" title="C3Tech"/>
+                                <img src="/assets/img-marcas/c3tech.jpg" 
+                                     alt="C3Tech" 
+                                     title="C3Tech"
+                                />
                                 <p>C3Tech</p>
                             </a>
                         </div>
                         <div className='marca'>
                             <a href="#">
-                                <img src="/assets/img-marcas/lg.jpg" alt="LG" title="LG"/>
+                                <img src="/assets/img-marcas/lg.jpg" 
+                                     alt="LG" 
+                                     title="LG"
+                                />
                                 <p>LG</p>
                             </a>
                         </div>
                         <div className='marca'>
                             <a href="#">
-                                <img src="/assets/img-marcas/microsoft.jpeg" alt="Microsoft" title="Microsoft"/>
+                                <img src="/assets/img-marcas/microsoft.jpeg" 
+                                     alt="Microsoft" 
+                                     title="Microsoft"
+                                />
                                 <p>Microsoft</p>
                             </a>
                         </div>
                         <div className='marca'>
                             <a href="#">
-                                <img src="/assets/img-marcas/motorola.jpg" alt="Motorola" title="Motorola"/>
+                                <img src="/assets/img-marcas/motorola.jpg" 
+                                     alt="Motorola" 
+                                     title="Motorola"
+                                />
                                 <p>Motorola</p>
                             </a>
                         </div>
                         <div className='marca'>
                             <a href="#">
-                                <img src="/assets/img-marcas/positivo.jpg" alt="Positivo" title="Positivo"/>
+                                <img src="/assets/img-marcas/positivo.jpg" 
+                                     alt="Positivo" 
+                                     title="Positivo"
+                                />
                                 <p>Positivo</p>
                             </a>
                         </div>
                         <div className='marca'>
                             <a href="#">
-                                <img src="/assets/img-marcas/samsung.jpg" alt="Samsung" title="Samsung"/>
+                                <img src="/assets/img-marcas/samsung.jpg" 
+                                     alt="Samsung" 
+                                     title="Samsung"
+                                />
                                 <p>Samsung</p>
                             </a>  
                         </div>
@@ -107,7 +167,10 @@ const Home = () => {
                             </div>
                         </div>
                         <div className='frete'>
-                            <img src="/assets/frete.png" alt="Frete" title="Frete"/>
+                            <img src="/assets/frete.png" 
+                                 alt="Frete" 
+                                 title="Frete"
+                            />
                             <p>Frete grátis em quase todos os produtos da loja. Aproveite!</p>
                             <p>Nossos produtos são enviados no mesmo dia do pagamento.</p>
                             <p>Enviamos para todo o Brasil e algumas localidades internacionais sem taxa e custos adicionais.</p>
@@ -116,7 +179,10 @@ const Home = () => {
                             </p>
                         </div>
                         <div className="produtos-diversidade">
-                            <img src="/assets/diversidade_produtos.jpg" alt="Diversidade de Produtos" title="Produtos"/>
+                            <img src="/assets/diversidade_produtos.jpg" 
+                                 alt="Diversidade de Produtos" 
+                                 title="Produtos"
+                            />
                             <p>Nossa loja é parceira de várias marcas famosas incluíndo Apple, Asus, Nvidia e muitas outras.
                                Isso é uma vantagem e nos torna uma loja intermediadora entre o cliente e o fabricante.
                             </p>
@@ -128,7 +194,10 @@ const Home = () => {
                             </p>
                         </div>
                         <div className='cupom'>
-                            <img src="/assets/indiqueganhe.png" alt="Cupom" title="Cupom de Desconto"/>
+                            <img src="/assets/indiqueganhe.png" 
+                                 alt="Cupom" 
+                                 title="Cupom de Desconto"
+                            />
                             <p>Você pode ganhar um desconto exclusivo para cada amigo indicado.</p>
                             <p>Seu amigo precisa se cadastrar na loja usando seu link de indicação. 
                                Dessa forma Você ganhará um Cupom de Desconto e poderá utiliza-lo em qualquer
@@ -143,61 +212,91 @@ const Home = () => {
                         <div className='produtos'>
                             <div className='produto'>
                                 <a href="#">
-                                    <img src="/assets/img-produtos/airpod.jpeg" alt="AirPod" title="AirPod"/>
+                                    <img src="/assets/img-produtos/airpod.jpeg" 
+                                         alt="AirPod" 
+                                         title="AirPod"
+                                    />
                                     <div className='shadow'></div>
                                 </a>
                             </div>
                             <div className='produto'>
                                 <a href="#">
-                                    <img src="/assets/img-produtos/iphone.jpg" alt="Iphone 15 Pro Max" title="Iphone 15 Pro Max"/>
+                                    <img src="/assets/img-produtos/iphone.jpg" 
+                                         alt="Iphone 15 Pro Max" 
+                                         title="Iphone 15 Pro Max"
+                                    />
                                     <div className='shadow'></div>
                                 </a>
                             </div>
                             <div className='produto'>
                                 <a href="#">
-                                    <img src="/assets/img-produtos/monitor.jpg" alt="Monitor Gamer" title="Monitor Gamer"/>
+                                    <img src="/assets/img-produtos/monitor.jpg" 
+                                         alt="Monitor Gamer" 
+                                         title="Monitor Gamer"
+                                    />
                                     <div className='shadow'></div>
                                 </a>
                             </div>
                             <div className='produto'>
                                 <a href="#">
-                                    <img src="/assets/img-produtos/placa-de-video.jpg" alt="Placa de Vídeo RTX 4060Ti" title="Placa de Vídeo"/>
+                                    <img src="/assets/img-produtos/placa-de-video.jpg" 
+                                         alt="Placa de Vídeo RTX 4060Ti" 
+                                         title="Placa de Vídeo"
+                                    />
                                     <div className='shadow'></div>
                                 </a>
                             </div>
                             <div className='produto'>
                                 <a href="#">
-                                    <img src="/assets/img-produtos/ssd-crucial.jpg" alt="SSD Crucial 2TB" title="SSD Crucial"/>
+                                    <img src="/assets/img-produtos/ssd-crucial.jpg" 
+                                         alt="SSD Crucial 2TB" 
+                                         title="SSD Crucial"
+                                    />
                                     <div className='shadow'></div>
                                 </a>
                             </div>
                             <div className='produto'>
                                 <a href="#">
-                                    <img src="/assets/img-produtos/tablet-gamer.jpg" alt="Tablet Gamer Samsung A7" title="Tablet Gamer"/>
+                                    <img src="/assets/img-produtos/tablet-gamer.jpg" 
+                                         alt="Tablet Gamer Samsung A7" 
+                                         title="Tablet Gamer"
+                                    />
                                     <div className='shadow'></div>
                                 </a>
                             </div>
                             <div className='produto'>
                                 <a href="#">
-                                    <img src="/assets/img-produtos/impressora.jpg" alt="Impressora HP" title="Impressora"/>
+                                    <img src="/assets/img-produtos/impressora.jpg" 
+                                         alt="Impressora HP" 
+                                         title="Impressora"
+                                    />
                                     <div className='shadow'></div>
                                 </a>
                             </div>
                             <div className='produto'>
                                 <a href="#">
-                                    <img src="/assets/img-produtos/notebook-dell.avif" alt="Notebook Dell" title="Notebook Dell"/>
+                                    <img src="/assets/img-produtos/notebook-dell.avif" 
+                                         alt="Notebook Dell" 
+                                         title="Notebook Dell"
+                                    />
                                     <div className='shadow'></div>
                                 </a>
                             </div>
                             <div className='produto'>
                                 <a href="#">
-                                    <img src="/assets/img-produtos/carregador-celular.jpg" alt="Carregadore de Celular" title="Carregador de Celular"/>
+                                    <img src="/assets/img-produtos/carregador-celular.jpg" 
+                                         alt="Carregadore de Celular" 
+                                         title="Carregador de Celular"
+                                    />
                                     <div className='shadow'></div>
                                 </a>
                             </div>
                             <div className='produto'>
                                 <a href="#">
-                                    <img src="/assets/img-produtos/mouse.jpg" alt="Mouse" title="Mouse"/>
+                                    <img src="/assets/img-produtos/mouse.jpg" 
+                                         alt="Mouse" 
+                                         title="Mouse"
+                                    />
                                     <div className='shadow'></div>
                                 </a>
                             </div>

@@ -103,6 +103,10 @@ const Footer = () => {
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade">
                 </iframe>  
+                <p id="copyright">
+                    Copyright © 2023 Greeng Store. Todos os direitos reservados.    
+                </p>
+                <p id="credit">By @Marcos André </p>
             </div>
         </footer>
     );

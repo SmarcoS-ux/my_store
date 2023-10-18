@@ -128,3 +128,12 @@
     height: 250px;
     margin-top: 10px;
 }
+
+.endereco #copyright{
+    margin-top: 50px;
+    color: rgb(233, 198, 45);
+}
+.endereco #credit{
+    font-size: 13px;
+    color:rgb(240, 225, 158)
+}

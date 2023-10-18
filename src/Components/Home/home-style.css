@@ -12,7 +12,7 @@
 
 
 .banner_principal{
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../../../public//assets/banner_principal.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url("../../../public//assets/banner_principal.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: bottom;
@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    color: #c9f3b6;
+    color: #bdd9f0;
     padding-bottom: 20px;
 }
 .banner_principal #subtitle, h1{
@@ -31,6 +31,7 @@
 .banner_principal h1{
     width: 100%;
     font-size: 90px;
+    text-shadow: 1px 1px 3px;
 }
 .banner_principal h3{
     font-size: 30px;
@@ -41,12 +42,12 @@
 
 
 
-
-.introducao #title-marcas{
+/*Tema Dark Introdução Principal*/
+#title-marcas_dark{
     background-color: rgba(0, 0, 0, 0.9);
     width: 100%;
-    padding-top: 30px;
-    margin-top: 8px;
+    padding-top: 50px;
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,7 +56,28 @@
     font-size: 25px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-.introducao #line{
+#line_dark{
+    background-color: rgb(221, 223, 222);
+    height: 3px;
+    border: 1px solid #e6e6e6;
+    width: 246px;
+}
+
+/*Tema Light Introdução Principal*/
+#title-marcas_light{
+    background-color: rgb(82, 82, 82);
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #e6e6e6;
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#line_light{
     background-color: rgb(221, 223, 222);
     height: 3px;
     border: 1px solid #e6e6e6;
@@ -66,12 +88,13 @@
 
 
 .marcas{
+    background-color: #222222;
     display: flex;
     flex-direction: row;
     margin-top: 50px;
     overflow-x: scroll;
     width: calc(100% - 100px) ;
-    padding: 0 50px;
+    padding: 35px 50px 0 50px;
 }
 .marcas a{
     text-decoration: none;
@@ -87,8 +110,13 @@
     border-radius: 50% 50% 10px 10px;
 }
 .marcas .marca p{
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
+.marcas .marca p:hover{
+    border-bottom: 1px solid rgb(230, 230, 230);
+    box-shadow: 0px 1px ;
+}
+
 
 
 
@@ -147,6 +175,7 @@
 .frete img{
     width: 300px;
     box-shadow: 3px 3px 5px #a09f9f;
+    border-radius: 5px;
 }
 .frete p{
     font-size: 14px;
@@ -166,6 +195,7 @@
 .produtos-diversidade img{
     width: 300px;
     box-shadow: 3px 3px 5px #a09f9f;
+    border-radius: 5px;
 }
 .produtos-diversidade p{
     font-size: 14px;
@@ -185,6 +215,7 @@
     width: 300px;
     height: 300px;
     box-shadow: 3px 3px 5px #a09f9f;
+    border-radius: 5px;
 }
 .cupom p{
     font-size: 14px;

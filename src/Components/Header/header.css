@@ -3,8 +3,17 @@
     padding: 0 auto;
 }
 
-.header{
-    background-color: rgb(213, 248, 188);
+.header_theme_dark{
+    background-color: #161f35;
+    width: calc(100% - 100px);
+    height: 70px;
+    padding: 0px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header_theme_light{
+    background-color: #4e78b6;
     width: calc(100% - 100px);
     height: 70px;
     padding: 0px 50px;
@@ -13,7 +22,7 @@
     align-items: center;
 }
 
-.header .area-pesquisa{
+.area-pesquisa{
     width: calc(50%);
     margin: 0;
     display: flex;
@@ -21,18 +30,18 @@
     align-items: center;
     justify-content: flex-start;
 }
-.header .area-pesquisa .icons_1{
+.area-pesquisa .icons_1{
     margin: 0;
     display: flex;
     align-items: center;
 }
 
-.header #logo{
-    width: 45px;
+#logo{
+    width: 150px;
     height: 45px;
 }
 
-.header input{
+#input_pesquisar{
     height: 28px;
     width: 400px;
     margin-left: 50px;
@@ -40,13 +49,20 @@
     border: 1px solid rgb(104, 101, 101);
     border-radius: 15px 0 0 15px;
     padding-left: 10px;
+    font-size: 15px;
+}
+#input_pesquisar:focus{
+    box-shadow: 3px 3px 15px rgb(42, 154, 219);
+}
+#input_pesquisar:focus ~ #button-search{
+    box-shadow: 3px 3px 15px  rgb(42, 154, 219);
 }
 
-.header #img-button{
+#img-button{
     width: 20px;
     height: 20px;
 }
-.header button{
+#button-search{
     width: 40px;
     height: 32px;
     border-radius: 0 15px 15px 0;
@@ -56,12 +72,12 @@
     border-left: none;
     background-color: rgb(206, 204, 204);
 }
-.header button:hover{
+#button-search:hover{
     background-color: rgb(184, 184, 184);
     cursor: pointer;
 }
 
-.header .area-user-config{
+.area-user-config{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -70,24 +86,51 @@
     height: 100%;
     margin: 0
 }
-.header .area-user-config .icons{
+.area-user-config .icons{
     margin: 0;
+    position: relative;
 }
 
-.header #config{
+#config{
     width: 30px;
     height: 30px;
     margin-right: 25px;
 }
-.header #config:hover{
+#config:hover{
     cursor: pointer;
 }
 
-.header #img-user{
+#img-user{
     width: 28px;
     height: 30px;
 }
-.header #img-user:hover{
+#img-user:hover{
     cursor: pointer;
 }
 
+
+.popup_login_cadastro{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border-radius: 5px;
+    width: 250px;
+    height: 200px;
+    left: -207px;
+    top: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.popup_login_cadastro #message_login{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.popup_login_cadastro a{
+    background-color: #39a6ff;
+    text-decoration: none;
+    color: #fff;
+}
+#link_login{
+    padding: 5px 70px;
+    margin-top: 10px;
+}
