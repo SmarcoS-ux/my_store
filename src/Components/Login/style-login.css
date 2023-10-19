@@ -1,0 +1,118 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+}
+
+.inputs_login{
+    background-color: #161f35;
+    height:430px;
+    width: 350px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 20px #161f35;
+}
+.inputs_login p:nth-of-type(1){
+    margin-bottom: 5px; 
+}
+.inputs_login p:nth-of-type(2){
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+.inputs_login p:nth-of-type(3){
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+div.inputs_login * {
+    margin: 0;
+}
+
+#title_login{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+
+#inp_email, #inp_senha{
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+#inp_email:focus, #inp_senha:focus{
+    outline: none;
+    box-shadow: 3px 3px 10px rgb(58, 193, 255);
+}
+
+
+#button_entrar{
+    margin-top: 50px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(0, 195, 255);
+    font-size: 16px;
+    color:#ffffff;
+    font-weight: 700;
+}
+#button_entrar:hover{
+    background-color: rgb(32, 141, 192);
+    cursor: pointer;
+}
+
+#div_inp_senha{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#div_inp_senha input{
+    width: 100%;
+    padding-right: 40px;
+}
+#div_inp_senha a{
+    position: absolute;
+    width: 20px;
+    right: 10px
+}
+#div_inp_senha:hover{
+    cursor: pointer;
+}
+
+#div_inp_senha img{
+    width: 20px;
+}
+
+/*Mensagens email e senha vazios*/
+#message_email, #message_senha{
+    color: rgb(255, 93, 93);
+    font-size: 13px;
+    margin-top: 4px;
+    display: none;
+}
+
+
+#esqueceu_senha{
+    text-align: end;
+    margin-top: 10px;
+    color: #ffbfbf;
+}
+
+#cadastrar{
+    color: rgb(66, 162, 252)
+}
+
+
+.termos{
+    width: 350px;
+    text-align: center;
+    margin-top: 20px;
+}

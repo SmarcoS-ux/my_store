@@ -1,0 +1,19 @@
+.logo-header{
+    background-color: #161f35;
+    width: calc(100% - 100px);
+    height: 70px;
+    padding: 0 50px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo-header img{
+    width: 150px;
+    margin: 0;
+}
+
+#link_home{
+    margin: 0;
+}

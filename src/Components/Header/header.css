@@ -87,6 +87,8 @@
     margin: 0
 }
 .area-user-config .icons{
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin: 0;
     position: relative;
 }
@@ -116,9 +118,23 @@
     width: 250px;
     height: 200px;
     left: -207px;
-    top: 40px;
+    top: 55px;
     text-align: center;
     padding: 20px;
+    display: none;
+    flex-direction: column;
+}
+.popup_login_cadastro:hover{
+    display: flex;
+}
+#icon_user{
+    padding-bottom: 10px;
+}
+#icon_user:hover ~ .popup_login_cadastro{
+    display: flex;
+}
+#icon_user:active ~ .popup_login_cadastro{
+    display: flex;
 }
 
 .popup_login_cadastro #message_login{
@@ -129,8 +145,13 @@
     background-color: #39a6ff;
     text-decoration: none;
     color: #fff;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    border-radius: 8px;
 }
 #link_login{
-    padding: 5px 70px;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
+

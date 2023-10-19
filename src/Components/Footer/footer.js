@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
             <div className='logo'>
                 <div className='border'></div>
-                <img src="/assets/logo.png" alt="Logomarca" title='Logomarca'/>
+                <img src="/assets/future.png" alt="Logomarca" title='Logomarca'/>
                 <div className='border'></div>
             </div>
             <div className='redes-sociais'>
