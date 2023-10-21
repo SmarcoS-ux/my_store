@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./style-login.css";
 
 import Header_Logo from "../Header/Header_Logo/header_logo";
+import Termos from "../Termos_uso/termos_uso";
 
 const Login = () => {
+    const Olho_Aberto = "/assets/olho.png";
+    const Olho_Fechado = "/assets/olho_fechado.png";
+
+    const[icon_olhar_senha, setIconOlharSenha] = useState(Olho_Fechado);
 
     const Ver_senha = () => {
         let Input_senha = document.getElementById("inp_senha");
         
         if (Input_senha.getAttribute("type") == "password"){
             Input_senha.setAttribute("type", "text");
+            setIconOlharSenha(Olho_Aberto);
         } else{
             Input_senha.setAttribute("type", "password");
+            setIconOlharSenha(Olho_Fechado);
         }
     }
     
@@ -38,7 +45,7 @@ const Login = () => {
                                 type="password"
                             />
                             <a onClick={Ver_senha}>
-                                <img src="/assets/olho.png"/>
+                                <img src={icon_olhar_senha}/>
                             </a>
                         </div>
                         <label id="message_senha">Senha obrigatória</label>
@@ -51,9 +58,7 @@ const Login = () => {
                         <p>Não tem cadastro? <Link id="cadastrar">Cadastre-se!</Link></p>
                     </div>
                 </form>
-                <div className="termos">
-                    <p>Ao continuar com o acesso você aceita nossos <Link>Termos de Responsabilidade</Link></p>
-                </div>
+                <Termos/>
             </div>
         </div>
     );

@@ -59,8 +59,10 @@ const Header = (props) => {
                               >Faça Login
                         </Link>
                         <p>ou</p>
-                        <a id="link_cadastro" 
-                           href="#">Cadastre-se</a>
+                        <Link to="cadastro_usuario" 
+                              id="link_cadastro" 
+                              href="#">Cadastre-se
+                        </Link>
                     </div>
                 </div>
             </div>
